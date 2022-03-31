@@ -8,6 +8,7 @@ import { WhoComponent } from './features/who/who.component';
 import { ContactUsComponent } from './features/contact-us/contact-us.component';
 import { SharedModule } from './shared/shared.module';
 import { MainComponent } from './features/main/main.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MainComponent } from './features/main/main.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
