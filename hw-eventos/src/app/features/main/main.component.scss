@@ -1,0 +1,38 @@
+/*@font-face {
+  font-family: 'UbuntuRegular';
+  src: url('./assets/fonts/Ubuntu/Ubuntu-Regular.ttf');
+}*/
+
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 95%;
+  align-items: center;
+}
+
+.text{
+  background-color: #EAA334;
+  width: 50%;
+  color: #F8F8F8;
+  text-align: center;
+  height: 100%;
+  text-align: left;
+  padding-left: 8em;
+  padding-top: 6em;
+  span{
+    font-size: 6em;
+    line-height: 1em;
+  }
+}
+
+.imageContainer{
+  color: #EAA334;
+  width: 50%;
+  height: 100%;
+  margin-left: 2em;
+  padding-top: 6em;
+  .image{
+    margin-bottom: 3em;
+  }
+}
