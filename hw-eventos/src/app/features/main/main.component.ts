@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -8,7 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   private static num_loadings = 0;
-
   constructor() { }
 
   ngOnInit(): void {
