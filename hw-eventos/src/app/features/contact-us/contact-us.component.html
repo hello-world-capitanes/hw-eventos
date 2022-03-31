@@ -1,40 +1,67 @@
-<ng-container>
-  <div class="example-container">
+<div class = "main">
+  <div class = "submain">
+    <div class = "flex-container">
 
-    <mat-form-field appearance="outline">
-      <mat-label>Nombre</mat-label>
-      <input matInput placeholder="Nombre">
-      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-      <mat-hint>Hint</mat-hint>
-    </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
 
-    <mat-form-field appearance="outline">
-      <mat-label>Apellidos</mat-label>
-      <input matInput placeholder="Apellidos">
-      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-      <mat-hint>Hint</mat-hint>
-    </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Apellidos</mat-label>
+        <input matInput placeholder="Apellidos">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+    </div>
 
-    <mat-form-field appearance="outline">
-      <mat-label>Correo</mat-label>
-      <input matInput placeholder="Correo">
-      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-      <mat-hint>Hint</mat-hint>
-    </mat-form-field>
+    <div class = "flex-container">
+      <mat-form-field appearance="outline">
+        <mat-label>Correo</mat-label>
+        <input matInput placeholder="Correo">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
 
-    <mat-form-field appearance="outline">
-      <mat-label>Teléfono</mat-label>
-      <input matInput placeholder="Teléfono">
-      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-      <mat-hint>Hint</mat-hint>
-    </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Teléfono</mat-label>
+        <input matInput placeholder="Teléfono">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+    </div>
 
-    <mat-form-field appearance="outline">
-      <mat-label>Outline form field</mat-label>
-      <input matInput placeholder="Placeholder">
-      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-      <mat-hint>Hint</mat-hint>
-    </mat-form-field>
+    <div class = "Empresa">
+      <mat-form-field appearance="outline">
+        <mat-label>Empresa</mat-label>
+        <mat-select>
+          <mat-option>
+            <ngx-mat-select-search
+            placeholder="Empresa"
+
+            ></ngx-mat-select-search>
+
+          </mat-option>
+
+          <mat-option>
+
+          </mat-option>
+        </mat-select>
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-checkbox>
+          He leído y aceptado
+          <span class = "politica-privacidad"> las políticas de privacidad </span>
+
+      </mat-checkbox>
+    </div>
+
+    <div class = "send-button">
+      <button mat-flat-button color="primary">
+        Enviar
+      </button>
+    </div>
 
   </div>
-</ng-container>
+</div>

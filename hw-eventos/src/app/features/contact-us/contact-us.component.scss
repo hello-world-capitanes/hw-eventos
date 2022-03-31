@@ -1,0 +1,33 @@
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.main{
+  height: 500px;
+  width: 500px;
+}
+
+.submain{
+  margin: 0 auto;
+  padding-left: 50px;
+}
+
+.politica-privacidad{
+  text-decoration: underline;
+}
+
+
+.flex-container mat-formfield{
+
+  padding-left: 30px;
+}
+
+.send-button{
+  text-align: right;
+}
+
+.empresa{
+
+  align-self: center;
+}

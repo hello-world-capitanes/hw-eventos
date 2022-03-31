@@ -9,8 +9,12 @@ import { HomeComponent } from './features/home/home.component';
 import { MainComponent } from './features/main/main.component';
 import { WhoComponent } from './features/who/who.component';
 import { SharedModule } from './shared/shared.module';
-import {MatInputModule} from '@angular/material/input';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import {MatInputModule} from '@angular/material/input';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    NgxMatSelectSearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
