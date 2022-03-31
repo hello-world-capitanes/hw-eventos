@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './features/home/home.component';
-import { WhoComponent } from './features/who/who.component';
 import { ContactUsComponent } from './features/contact-us/contact-us.component';
-import { SharedModule } from './shared/shared.module';
+import { HomeComponent } from './features/home/home.component';
 import { MainComponent } from './features/main/main.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WhoComponent } from './features/who/who.component';
+import { SharedModule } from './shared/shared.module';
+import {MatInputModule} from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
