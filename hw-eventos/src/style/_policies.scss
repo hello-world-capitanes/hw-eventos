@@ -1,0 +1,42 @@
+.mod--text {
+    background: #F8F8F8;
+    .inner{
+      max-width: 1140px;
+      padding: 60px 20px 0;
+      width: 100%;
+      margin: 0 auto;
+      .title{
+        display: block;
+        line-height: 1.1em;
+        color: black;
+        font-family: 'vagbold';
+        font-size: 4.375em;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto 100px;
+      }
+    }
+    .outer {
+        max-width: 1140px;
+        padding: 20px 20px 40px 20px;
+        margin: 0 auto;
+        .list {
+            .list-element {
+                .element-title {
+                    color: black;
+                    font-family: 'vagbold';
+                    font-size: 1.5em;
+                }
+                .text {
+                    margin-top: 12px;
+                    font-size: 1.2em;
+                }
+            }
+            .list-element::marker {
+                color: black;
+                font-family: 'vagbold';
+                font-size: 1.5em;
+            }
+        }
+    }
+}
