@@ -1,0 +1,37 @@
+div {
+  font-family: "vagbold";
+
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1em;
+    color: #fff;
+    vertical-align: baseline;
+  }
+}
+
+.div-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.4);
+  background-image: url("https://www.helloworld-school.com/assets/dummy-about.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18em;
+}
+
+.div-background{
+  background-color: aquamarine;
+}
+
+.div-resume{
+  margin-left: 15px;
+  margin-top: 20px;
+
+}
+
+.ol-list>li{
+  margin-top: 10px;
+}
