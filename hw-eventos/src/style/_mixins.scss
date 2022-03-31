@@ -1,0 +1,89 @@
+/* == Mixins genéricos == */
+
+//------------------ TRANSITIONS ------------------
+
+  @mixin transition($args) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+  }
+
+  @mixin transition-property($property) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+  }
+
+
+
+  @mixin transition-duration($duration) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+  }
+  @mixin transition-timing-function($timing) {
+    -moz-transition-timing-function:    $timing;
+    -o-transition-timing-function:      $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+  }
+  @mixin transition-delay($delay) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+  }
+
+  //------------------ BOX SHADOW ------------------
+  @mixin box-shadow($string) {
+    -webkit-box-shadow: $string;
+    -moz-box-shadow:    $string;
+    box-shadow:         $string;
+  }
+
+  //------------------ BORDER RADIUS ------------------
+  @mixin border-radius($radius: 0.5em) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+  //------------------ OPACITY ------------------
+  @mixin opacity($opacity: 0.5) {
+    $opacityPercentage: $opacity * 100;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacityPercentage);
+    filter: alpha(opacity=$opacityPercentage);
+    -moz-opacity:   $opacity;
+    -khtml-opacity: $opacity;
+    opacity:        $opacity;
+  }
+
+  //------------------ SCALE ------------------
+  @mixin scale($factor) {
+    -webkit-transform:  scale($factor);
+    -moz-transform:     scale($factor);
+    -ms-transform:      scale($factor);
+    -o-transform:       scale($factor);
+  }
+
+  //------------------ ROTATE ------------------
+  @mixin rotate($deg) {
+    -webkit-transform:  rotate($deg);
+    -moz-transform:     rotate($deg);
+    -ms-transform:      rotate($deg);
+    -o-transform:       rotate($deg);
+  }
+
+  //------------------ TEXT OVERFLOW ELLIPSIS ------------------
+  @mixin ellipsis() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+
+

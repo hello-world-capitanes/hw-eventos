@@ -1,0 +1,51 @@
+:root{
+  // ---------- Cookie consent vars ----------------- //
+  --ucc-modal-background: #000;
+  --ucc-modal-width: 100%;
+  --ucc-modal-padding: 10px 50px;
+  --ucc-font-family: 'vaglight';
+  --ucc-color: #fff;
+  --ucc-color-a: #aaa;
+  --ucc-color-primary: #bf8700;
+  --ucc-color-primary-hover: #ffc700;
+  --ucc-color-secondary: #bf8700;
+  --ucc-color-secondary-hover: #ffc700;
+}
+
+.ucc-modal{
+  display: flex;
+  color: var(--ucc-color);
+  position: absolute;
+  bottom: 0px;
+  min-height: auto !important;
+  .ucc-intro {
+    margin-bottom: 0px !important;
+    max-width: 80%;
+    a{
+      color: var(--ucc-color-a);
+    }
+  }
+  .ucc-buttons{
+    max-width: 18%;
+    .ucc-button {
+      flex-basis: 50%;
+      padding-right: 20px;
+      padding-left: 20px;
+      &.ucc-button--primary:hover{
+        background-color: var(--ucc-color-primary-hover);
+        cursor: pointer;
+      }
+      &.ucc-button--secondary:hover{
+        background-color: var(--ucc-color-secondary-hover);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
